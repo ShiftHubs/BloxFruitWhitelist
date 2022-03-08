@@ -1581,8 +1581,10 @@ page1:Toggle("Auto SetSpawnPoint",false,function (value)
 end)
 
 _G.FastAtttk = false
-page3:Toggle("Fast Attack",_G.FastAtttk,function (value)
+page1:Toggle("Fast Attack",_G.FastAtttk,function (value)
 	_G.FastAtttk = value
+end)
+
 	local RigC = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework) 
 	local VirtualUser = game:GetService('VirtualUser')
 	local kkii = require(game.ReplicatedStorage.Util.CameraShaker)
@@ -1610,7 +1612,6 @@ page3:Toggle("Fast Attack",_G.FastAtttk,function (value)
             for i = 1,math,9999999999999999999999999999999999999999999999999999 do game:GetService('RunService').Heartbeat:wait()
         end
     end)
-end)
 
 page1:Ti("FARM")
 
