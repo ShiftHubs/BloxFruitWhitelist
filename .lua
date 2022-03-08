@@ -1580,10 +1580,7 @@ page1:Toggle("Auto SetSpawnPoint",false,function (value)
 	_G.SetSpawn = value
 end)
 
-_G.FastAtttk = false
-page1:Toggle("Fast Attack",_G.FastAtttk,function (value)
-	_G.FastAtttk = value
-end)
+_G.FastAtttk = true
 
 local RigC = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework) 
 local VirtualUser = game:GetService('VirtualUser')
